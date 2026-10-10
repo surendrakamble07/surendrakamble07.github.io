@@ -1,361 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surendra Kamble - Cloud Computing Specialist</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text">Surendra <span class="logo-accent">Kamble</span></span>
-            </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Background 3D Elements -->
-    <div class="bg-3d-elements">
-        <div class="floating-cloud cloud-1"></div>
-        <div class="floating-cloud cloud-2"></div>
-        <div class="floating-cloud cloud-3"></div>
-        <div class="floating-cloud cloud-4"></div>
-        <div class="server-rack server-1"></div>
-        <div class="server-rack server-2"></div>
-        <div class="data-particles" id="particles"></div>
-    </div>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    <span class="title-line">Surendra Kamble</span>
-                    <span class="title-line accent">AWS DevOps Engineer</span>
-                </h1>
-                <p class="hero-description">
-                    Innovative cloud solutions architect with expertise in scalable infrastructure and modern web technologies
-                </p>
-                <div class="hero-buttons">
-                    <button class="btn btn-primary cta-button" onclick="scrollToSection('projects')">
-                        View Projects
-                        <span class="btn-glow"></span>
-                    </button>
-                    <button class="btn btn-outline cta-button" onclick="scrollToSection('contact')">
-                        Get In Touch
-                        <span class="btn-glow"></span>
-                    </button>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="cloud-data-transfer">
-                    <div class="central-cloud">
-                        <div class="cloud-core"></div>
-                        <div class="data-stream stream-1"></div>
-                        <div class="data-stream stream-2"></div>
-                        <div class="data-stream stream-3"></div>
-                        <div class="data-stream stream-4"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-                <p class="section-subtitle">Building the future of cloud infrastructure</p>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <div class="about-card">
-                        <h3>AWS DevOps Engineer</h3>
-                        <p>I am an enthusiastic AWS DevOps Engineer with hands-on experience in building, automating, and optimizing cloud solutions that drive efficiency and scalability. Over the years, I’ve worked extensively with AWS services, CI/CD pipelines, containerization, and infrastructure as code, ensuring seamless deployment and reliable systems. Now, I’m embarking on my next journey to become a world-class Cloud Engineer, where I aim to deepen my expertise in cloud architecture, security, and automation while contributing to innovative projects that harness the true power of the cloud.</p>
-                    </div>
-                </div>
-                <div class="about-visual">
-                    <div class="holographic-server">
-                        <div class="server-layer layer-1"></div>
-                        <div class="server-layer layer-2"></div>
-                        <div class="server-layer layer-3"></div>
-                        <div class="network-connections">
-                            <div class="connection-line line-1"></div>
-                            <div class="connection-line line-2"></div>
-                            <div class="connection-line line-3"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Technical Skills</h2>
-                <p class="section-subtitle">Expertise across the cloud ecosystem</p>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-item" data-skill="AWS" data-level="90">
-                    <div class="skill-icon">☁️</div>
-                    <h3 class="skill-name">AWS-EC2,S3,IAM</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 90%"></div>
-                    </div>
-                    <span class="skill-percentage">90%</span>
-                </div>
-                <div class="skill-item" data-skill="Linux & Shell" data-level="85">
-                    <div class="skill-icon">🌐</div>
-                    <h3 class="skill-name">Linux & Shell</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 85%"></div>
-                    </div>
-                    <span class="skill-percentage">85%</span>
-                </div>
-                <div class="skill-item" data-skill="DevOps basics" data-level="88">
-                    <div class="skill-icon">🐳</div>
-                    <h3 class="skill-name">DevOps basics</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 88%"></div>
-                    </div>
-                    <span class="skill-percentage">88%</span>
-                </div>
-                <div class="skill-item" data-skill="SQL & Data" data-level="82">
-                    <div class="skill-icon">⚙️</div>
-                    <h3 class="skill-name">SQL & Data</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 82%"></div>
-                    </div>
-                    <span class="skill-percentage">82%</span>
-                </div>
-                <div class="skill-item" data-skill="Ai-Tool" data-level="87">
-                    <div class="skill-icon">🔧</div>
-                    <h3 class="skill-name">Ai-Tool</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 87%"></div>
-                    </div>
-                    <span class="skill-percentage">87%</span>
-                </div>
-                <div class="skill-item" data-skill="Prompt Engineering" data-level="90">
-                    <div class="skill-icon">💻</div>
-                    <h3 class="skill-name">Prompt Engineering</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 90%"></div>
-                    </div>
-                    <span class="skill-percentage">90%</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Featured Projects</h2>
-                <p class="section-subtitle">Innovative cloud solutions that make a difference</p>
-            </div>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card" data-project="1">
-                    <div class="project-card-inner">
-                        <div class="project-front">
-                            <div class="project-image">
-                                <div class="project-placeholder">
-                                    <span class="project-icon">☁️</span>
-                                </div>
-                            </div>
-                            <div class="project-content">
-                                <h3 class="project-title">Cloud Migration Platform</h3>
-                                <p class="project-description">Enterprise-grade cloud migration tool with automated scaling</p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">AWS</span>
-                                    <span class="tech-tag">Docker</span>
-                                    <span class="tech-tag">Node.js</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-back">
-                            <div class="project-details">
-                                <h3>Project Details</h3>
-                                <p>A comprehensive cloud migration platform that automates the process of moving enterprise applications to the cloud with minimal downtime.</p>
-                                <ul>
-                                    <li>Automated scaling and load balancing</li>
-                                    <li>Real-time monitoring and alerts</li>
-                                    <li>Cost optimization features</li>
-                                </ul>
-                                <a class="btn btn-primary" href="https://github.com/surendrakamble07/A-cloud-migration-platform-that-automates-moving-applications-to-the-cloud-with-minimal-downtime." target="_blank" rel="noopener noreferrer">
-                                    View Project
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card" data-project="2">
-                    <div class="project-card-inner">
-                        <div class="project-front">
-                            <div class="project-image">
-                                <div class="project-placeholder">
-                                    <span class="project-icon">🤖</span>
-                                </div>
-                            </div>
-                            <div class="project-content">
-                                <h3 class="project-title">Jarvis-Ai</h3>
-                                <p class="project-description">Personal Voice Assistant For Your Laptop</p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">Python</span>
-                                    <span class="tech-tag">API</span>
-                                    <span class="tech-tag">GUI</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-back">
-                            <div class="project-details">
-                                <h3>Project Details</h3>
-                                <p>Jarvis AI is an AI-powered personal voice assistant inspired by Iron Man’s J.A.R.V.I.S. It uses speech recognition, NLP, and machine learning to understand voice commands</p>
-                                <ul>
-                                    <li>Opening apps and managing files</li>
-                                    <li>Searching the web and answering queries</li>
-                                    <li>Playing music, videos, and news</li>
-                                    <li>reminders and schedules</li>
-                                </ul>
-                                <a class="btn btn-primary" href="https://github.com/surendrakamble07/Jarvis-AI" target="_blank" rel="noopener noreferrer">
-                                    View Project
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card" data-project="3">
-                    <div class="project-card-inner">
-                        <div class="project-front">
-                            <div class="project-image">
-                                <div class="project-placeholder">
-                                    <span class="project-icon">🚀</span>
-                                </div>
-                            </div>
-                            <div class="project-content">
-                                <h3 class="project-title">Container Orchestration System</h3>
-                                <p class="project-description">Kubernetes-based container management with auto-scaling</p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">Kubernetes</span>
-                                    <span class="tech-tag">Docker</span>
-                                    <span class="tech-tag">MongoDB</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-back">
-                            <div class="project-details">
-                                <h3>Project Details</h3>
-                                <p>A sophisticated container orchestration system built on Kubernetes with intelligent auto-scaling and resource optimization.</p>
-                                <ul>
-                                    <li>Intelligent auto-scaling</li>
-                                    <li>Resource optimization</li>
-                                    <li>Multi-cluster management</li>
-                                </ul>
-                                <a class="btn btn-primary" href="https://github.com/surendrakamble07/Intelligent-Kubernetes-Orchestration-with-Auto-Scaling" target="_blank" rel="noopener noreferrer">
-                                    View Project
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Let's Connect</h2>
-                <p class="section-subtitle">Ready to build something amazing together?</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-card">
-                        <h3>Get In Touch</h3>
-                        <p>I'm always excited to discuss new opportunities and collaborate on innovative cloud projects.</p>
-                        <div class="contact-links">
-                            <a href="mailto:your.email@example.com" class="contact-link">
-                                <span class="contact-icon">📧</span>
-                                <span>surendrakamble55184@gmail.com</span>
-                            </a>
-                            <a href="https://www.linkedin.com/in/surendra-kamble-593585319?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B0DQfbolWT4KYBJLqRQmljw%3D%3D" target="_blank" class="contact-link">
-                                <span class="contact-icon">💼</span>
-                                <span>LinkedIn Profile</span>
-                            </a>
-                            <a href="https://github.com/surendrakamble07" target="_blank" class="contact-link">
-                                <span class="contact-icon">👨‍💻</span>
-                                <span>GitHub Profile</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form class="form" id="contact-form">
-                        <div class="form-group">
-                            <label class="form-label" for="name">Name</label>
-                            <input type="text" id="name" name="name" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="email">Email</label>
-                            <input type="email" id="email" name="email" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full-width cta-button">
-                            Send Message
-                            <span class="btn-glow"></span>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Surendra Mahendra Kamble . Building the future of cloud computing.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="app.js"></script>
-</body>
-</html>
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Surendra Kamble | AWS Cloud &amp; DevOps Engineer</title>
+<meta name="description" content="Portfolio of Surendra Kamble, AWS Cloud &amp; DevOps Engineer in Pune: CI/CD, Kubernetes, Terraform, GitOps and monitoring.">
+<meta name="theme-color" content="#66fcf1">
+<meta property="og:type" content="website"><meta property="og:title" content="Surendra Kamble | AWS Cloud &amp; DevOps Engineer"><meta property="og:description" content="AWS, CI/CD, Kubernetes, Terraform, GitOps and monitoring.">
+<meta property="og:image" content="images/og.png">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="images/og.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="site.css"></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<aside class="side-nav" aria-label="Primary navigation"><a class="mark" href="#home" aria-label="Surendra Kamble home"><img src="images/logo.png" alt="S logo" width="60" height="60"></a>
+<nav class="rail-links"><a href="#home" aria-label="Home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg><span class="rail-label">Home</span></a><a href="#about" aria-label="About"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-5 15-5 16 0"/></svg><span class="rail-label">About</span></a><a href="#skills" aria-label="Skills"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2l3 7h7l-5.5 4.2 2.2 7L12 16l-6.7 4.2 2.2-7L2 9h7z"/></svg><span class="rail-label">Skills</span></a><a href="#workflow" aria-label="Workflow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 12h6M15 12h6"/><circle cx="12" cy="12" r="3"/></svg><span class="rail-label">Workflow</span></a><a href="#projects" aria-label="Projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 5h16v14H4z"/><path d="M4 10h16"/></svg><span class="rail-label">Projects</span></a><a href="#credentials" aria-label="Credentials"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M7 3h10v18l-5-3-5 3z"/></svg><span class="rail-label">Credentials</span></a><a href="#contact" aria-label="Contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 5h16v14H4z"/><path d="M4 7l8 6 8-6"/></svg><span class="rail-label">Contact</span></a></nav>
+<div class="rail-bottom"><a href="https://github.com/surendrakamble07" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/surendra-kamble-593585319/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div></aside>
+<main class="page" id="main">
+<div class="top-strip wrap"><span>Pune, IN</span><span>AWS Cloud &amp; DevOps<button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark theme" aria-pressed="false"><span class="toggle-icon" aria-hidden="true"></span><span id="themeLabel">Light</span></button></span></div>
+<section id="home" class="hero wrap"><div class="hello">
+<p class="eyebrow">CLOUD • DEVOPS • AUTOMATION</p>
+<div class="sentence"><small>01</small><h1>Hi, I'm<br>Surendra.</h1></div>
+<div class="sentence"><small>02</small><div class="role"><span class="word">AWS</span><span class="word">CI/CD</span><span class="word">K8s</span><span class="word">IaC</span></div></div>
+<div class="sentence"><small>03</small><h1 class="title">AWS Cloud &amp; DevOps Engineer.</h1></div>
+<p class="lede">Computer Engineering graduate building automated, observable and reliable cloud systems with AWS, Kubernetes, Terraform and CI/CD.</p>
+<div class="actions"><a class="btn primary" href="#projects">Explore My Work</a><a class="btn" href="assets/Surendra_Kamble_Resume.pdf" download>Download Resume</a><a class="btn" href="#contact">Let's Connect</a></div>
+<div class="term" role="img" aria-label="Terminal summary of Surendra Kamble"><i>$</i> <b>whoami</b><br>surendra: aws-devops, pune<br><i>$</i> <b>stack</b><br>aws · docker · kubernetes · terraform · jenkins · argocd</div>
+</div><figure class="photo-card"><picture><source type="image/webp" srcset="images/me-800.webp 800w, images/me-1200.webp 1200w" sizes="(max-width: 620px) 200px, (max-width: 980px) 360px, 340px"><img class="hero-portrait" src="images/me-1200.jpg" srcset="images/me-800.jpg 800w, images/me-1200.jpg 1200w" sizes="(max-width: 620px) 200px, (max-width: 980px) 360px, 340px" alt="Portrait of Surendra Kamble" width="800" height="1000"></picture></figure></section>
+<section id="about" class="section wrap"><div class="about-column"><header class="section-title"><small>02</small><h2>About</h2></header><div class="about-visual-bio"><figure class="about-figure"><button class="about-collage-trigger" id="aboutCollageTrigger" type="button" aria-label="Open About Me collage full size"><img src="images/about.png" alt="Personal collage of Surendra Kamble with travel photos, hobbies and a skills notepad" width="1114" height="1411" loading="lazy" decoding="async"></button></figure><div class="about-bio"><p class="about-bio-label">// ABOUT ME</p><p>Computer Engineering graduate (2022 - 2026, CGPA 9.40/10) focused on AWS Cloud and DevOps. I work with CI/CD pipelines, infrastructure as code, containers and cloud monitoring.</p><p>In my current role as a Technical / System Support Engineer at Zygal, I handle device configuration, network connectivity and site commissioning. That experience shapes a practical, troubleshooting-first approach to building reliable, maintainable systems.</p><p class="about-bio-aside">Outside work: photography, travel, good coffee, music and fitness.</p><div class="about-bio-chips"><span class="tech-chip">Pune, India</span><a class="tech-chip" href="https://github.com/surendrakamble07" target="_blank" rel="noopener noreferrer">GitHub</a><a class="tech-chip" href="https://www.linkedin.com/in/surendra-kamble-593585319/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div></div></div></div><div class="about-card-stack"><article class="about-card education-card"><div class="education-meta">Jaihind College of Engineering, Pune | SPPU</div><h3>Bachelor of Engineering, Computer Engineering</h3><p>2022 – 2026 / CGPA: 9.40/10</p></article><article class="about-card experience-card"><div class="experience-meta"><span class="timeline-role">Technical / System Support Engineer</span><span class="timeline-date">2026 – Present</span></div><h3>Zygal | Deekshaa Infosystems Private Limited</h3><ul class="about-list"><li>Configure, integrate and validate CCTV cameras, NVRs, TAM devices, Jio Tags, asset trackers, electronic control panels and Panic, Fire, Smoke, Vibration and PIR sensors during site commissioning</li><li>Troubleshoot device and network connectivity; provide remote system administration, Face Recognition validation, access assignment and end-to-end alert verification</li><li>Coordinate with site engineers and internal teams; maintain deployment and configuration documentation</li></ul></article><article class="about-card experience-card"><div class="experience-meta"><span class="timeline-role">AWS DevOps &amp; Cloud Intern</span><span class="timeline-date">2025 – 2026</span></div><h3>Fortune Cloud Technologies Private Limited</h3><ul class="about-list"><li>Designed and maintained AWS infrastructure: EC2, S3, RDS, Lambda, ALB, NLB, Security Groups and VPC networking, including MySQL/PostgreSQL RDS backup, monitoring and optimization</li><li>Deployed containerized workloads with Docker and Kubernetes on Amazon EKS and self-managed clusters</li><li>Automated provisioning with Terraform and CloudFormation; built CI/CD pipelines with Jenkins, GitHub Actions and AWS CodePipeline</li></ul></article></div></section>
+<section id="skills" class="section wrap"><aside class="section-title"><small>03</small><h2>Skills</h2></aside><div class="groups"><div class="group"><h3>Cloud computing</h3><span class="skill">EC2</span><span class="skill">S3</span><span class="skill">IAM</span><span class="skill">VPC</span><span class="skill">EKS</span><span class="skill">RDS</span><span class="skill">Lambda</span><span class="skill">ALB</span><span class="skill">CloudWatch</span></div><div class="group"><h3>DevOps &amp; CI/CD</h3><span class="skill">Jenkins</span><span class="skill">Git</span><span class="skill">GitHub</span><span class="skill">GitHub Actions</span><span class="skill">AWS CodePipeline</span><span class="skill">Argo CD</span><span class="skill">GitOps</span></div><div class="group"><h3>Containers &amp; orchestration</h3><span class="skill">Docker</span><span class="skill">Docker Compose</span><span class="skill">Kubernetes</span><span class="skill">Amazon EKS</span><span class="skill">Minikube</span></div><div class="group"><h3>IaC &amp; automation</h3><span class="skill">Terraform</span><span class="skill">CloudFormation</span><span class="skill">Ansible</span><span class="skill">Bash</span><span class="skill">Python</span></div><div class="group"><h3>Monitoring &amp; observability</h3><span class="skill">Prometheus</span><span class="skill">Grafana</span><span class="skill">CloudWatch</span><span class="skill">Linux</span></div><div class="group"><h3>AI &amp; developer tools</h3><span class="skill">GitHub Copilot</span><span class="skill">ChatGPT</span><span class="skill">Perplexity</span></div></div></section>
+<section id="workflow" class="section wrap"><aside class="section-title"><small>04</small><h2>Workflow</h2></aside><div><ol class="flow"><li>Developer<small>commit &amp; push</small></li><li>GitHub<small>source control</small></li><li>CI pipeline<small>Jenkins / GitHub Actions</small></li><li>Build &amp; test<small>scan dependencies</small></li><li>Docker image<small>container build</small></li><li>Registry<small>publish image</small></li><li>Kubernetes / EKS<small>Argo CD · Terraform</small></li><li>Monitoring<small>Prometheus · Grafana · CloudWatch</small></li></ol><p class="note">Illustrative workflow only. Not a live pipeline or real-time data.</p></div></section>
+<section id="projects" class="section wrap"><aside class="section-title"><small>05</small><h2>Projects</h2></aside><div class="project-grid"><article class="project-card"><div class="project-top"><span class="project-tag">GitOps · AWS</span><span class="project-index">01</span></div><div><h3>End-to-End GitOps Deployment on AWS EKS</h3><p>Automated delivery of a three-tier application on AWS EKS.</p></div><ul class="project-bullets"><li>Jenkins, Argo CD and Terraform automate CI/CD with GitOps-based delivery</li><li>Resume-stated result: manual intervention reduced by 80%</li><li>Prometheus and Grafana monitoring for Kubernetes workload visibility</li></ul><div class="tech-stack"><span class="tech-chip">AWS EKS</span><span class="tech-chip">Jenkins</span><span class="tech-chip">Argo CD</span><span class="tech-chip">Terraform</span><span class="tech-chip">Docker</span><span class="tech-chip">Kubernetes</span><span class="tech-chip">Prometheus</span><span class="tech-chip">Grafana</span></div><p><a href="https://github.com/surendrakamble07/node-todo-cicd-master" target="_blank" rel="noopener noreferrer">View repository &rarr;</a></p></article><article class="project-card"><div class="project-top"><span class="project-tag">DevSecOps · CI/CD</span><span class="project-index">02</span></div><div><h3>Wisecow: Secure Kubernetes CI/CD Pipeline</h3><p>GitHub Actions pipeline that builds, scans, publishes and deploys a containerized app.</p></div><ul class="project-bullets"><li>Builds and publishes Docker images with vulnerability scanning</li><li>Deploys to Kubernetes through Ingress with TLS/HTTPS</li><li>Applies RBAC, NetworkPolicies and Kubernetes Secrets, with monitoring for cluster visibility</li></ul><div class="tech-stack"><span class="tech-chip">Docker</span><span class="tech-chip">Kubernetes</span><span class="tech-chip">GitHub Actions</span><span class="tech-chip">Ingress</span><span class="tech-chip">TLS/HTTPS</span><span class="tech-chip">DevSecOps</span></div><p><a href="https://github.com/surendrakamble07/Wisecow-DevOps-Secure-Kubernetes-CI-CD-Pipeline" target="_blank" rel="noopener noreferrer">View repository &rarr;</a></p></article></div></section>
+<section id="credentials" class="section wrap"><aside class="section-title"><small>06</small><h2>Credentials</h2></aside><div class="stack"><article class="education-card"><div class="education-meta">Certification</div><h3>AWS Cloud Practitioner Essentials</h3><p>Completion certificate listed on resume. <a href="https://github.com/surendrakamble07/AWS-DevOps-Certificates" target="_blank" rel="noopener noreferrer">Certificates repository &rarr;</a></p></article></div></section>
+<section id="contact" class="contact wrap">
+	<div class="contact-intro">
+		<h2 class="contact-title">Let's<br>Build.</h2>
+		<p class="contact-copy">I'm an AWS Cloud &amp; DevOps engineer based in Pune, India. If you're hiring for cloud, DevOps or automation work, or just want to talk engineering, I'd love to hear from you.</p>
+		<div class="contact-offerings">
+			<span class="contact-caption">What I can help with</span>
+			<div class="contact-chips"><span class="tech-chip">AWS infrastructure</span><span class="tech-chip">CI/CD pipelines</span><span class="tech-chip">Kubernetes on EKS</span><span class="tech-chip">Terraform &amp; CloudFormation</span></div>
+		</div>
+	</div>
+	<div class="contact-cards">
+		<article class="contact-card contact-card-email">
+			<a class="contact-card-hitarea" href="mailto:surendrakamble55184@gmail.com">
+				<span class="contact-card-label">Email</span>
+				<span class="contact-card-value">surendrakamble55184@gmail.com</span>
+				<span class="contact-card-arrow" aria-hidden="true">↗</span>
+			</a>
+			<div class="contact-card-actions"><button class="copy" id="copy" type="button">Copy email</button><div id="toast" role="status" aria-live="polite"></div></div>
+		</article>
+		<a class="contact-card" href="https://www.linkedin.com/in/surendra-kamble-593585319/" target="_blank" rel="noopener noreferrer">
+			<span class="contact-card-label">LinkedIn</span><span class="contact-card-value">surendra-kamble</span><span class="contact-card-arrow" aria-hidden="true">↗</span>
+		</a>
+		<a class="contact-card" href="https://github.com/surendrakamble07" target="_blank" rel="noopener noreferrer">
+			<span class="contact-card-label">GitHub</span><span class="contact-card-value">surendrakamble07</span><span class="contact-card-arrow" aria-hidden="true">↗</span>
+		</a>
+		<a class="btn primary contact-resume" href="assets/Surendra_Kamble_Resume.pdf" download>Download Resume</a>
+	</div>
+</section>
+<footer class="site-footer wrap"><span>&copy; 2026 Surendra Kamble &middot; Pune, India &middot; Built with HTML, CSS and JavaScript</span><a href="#home">Back to top &uarr;</a></footer>
+</main><button id="top" type="button" aria-label="Back to top">TOP ↑</button><dialog class="image-dialog" id="aboutCollageDialog" aria-label="About Me collage"><button class="image-dialog-close" id="aboutCollageClose" type="button" aria-label="Close collage">Close</button><img src="images/about-1000.jpg" alt="Personal collage: Surendra Kamble with photos of travel and nature, hobbies, and a skills notepad" width="1000" height="1267"></dialog><script src="script.js"></script></body></html>
